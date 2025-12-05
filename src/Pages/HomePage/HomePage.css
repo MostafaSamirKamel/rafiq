@@ -1,0 +1,256 @@
+
+.home-container {
+  direction: rtl;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+.welcome-title {
+  font-weight: 800;
+  color: #2d3561;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Main card - ألوان أكثر دفئاً وودية */
+.main-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
+}
+
+.main-card h4 {
+  font-size: 1.3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-card .btn-light {
+  background: #ffffff;
+  color: #667eea;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-card .btn-light:hover {
+  background: #f0f4ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Section Title */
+.home-container h4 {
+  color: #2d3561;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Skills Cards - ألوان مبهجة ومتنوعة */
+.skills-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+  border: 2px solid #e8ecff;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border-radius: 16px !important;
+}
+
+.skills-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+}
+
+.skills-card h6 {
+  color: #667eea;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.skills-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Progress bars container */
+.progress {
+  height: 12px;
+  border-radius: 10px;
+  background: #e8ecff;
+  overflow: visible;
+  position: relative;
+  margin-top: 8px;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+  position: relative;
+  height: 100%;
+  
+}
+
+/* النسبة المئوية داخل الـ progress */
+.progress span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #667eea;
+  background: white;
+  padding: 2px 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display:flex;
+  align-items: center;
+}
+
+.skill-1 {
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+.skill-1-text {
+  color: #f5576c;
+}
+
+.skill-2 {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+.skill-2-text {
+  color: #00a8e8;
+}
+
+.skill-3 {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+.skill-3-text {
+  color: #00c9a7;
+}
+
+/* Assessment Cards - ألوان دافئة ومشجعة */
+.small-card {
+  background: linear-gradient(145deg, #fff 0%, #f0f9ff 100%);
+  box-shadow: 0 4px 16px rgba(79, 172, 254, 0.12);
+  border: 2px solid #e0f2fe;
+  transition: all 0.3s ease;
+  border-radius: 16px !important;
+}
+
+.small-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(79, 172, 254, 0.2);
+  border-color: #4facfe;
+}
+
+.small-card h6 {
+  color: #0ea5e9;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.small-card p {
+  color: #64748b;
+  line-height: 1.6;
+  min-height: 48px;
+}
+
+.small-card .btn-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.small-card .btn-primary:hover {
+  background: linear-gradient(135deg, #3b9aeb 0%, #00d9e6 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .main-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .home-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .col-md-4,
+  .col-6 {
+    margin-bottom: 20px;
+  }
+
+  .progress span {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+  }
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-card,
+.small-card,
+.main-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.col-md-4:nth-child(1) .skills-card {
+  animation-delay: 0.1s;
+}
+
+.col-md-4:nth-child(2) .skills-card {
+  animation-delay: 0.2s;
+}
+
+.col-md-4:nth-child(3) .skills-card {
+  animation-delay: 0.3s;
+}
+
+/* تأثير بصري إضافي عند hover على الـ progress */
+.skills-card:hover .progress-bar {
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+}
+
+.col-md-4:nth-child(1) .skills-card:hover .progress-bar {
+  box-shadow: 0 0 15px rgba(245, 87, 108, 0.4);
+}
+
+.col-md-4:nth-child(2) .skills-card:hover .progress-bar {
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.4);
+}
+
+.col-md-4:nth-child(3) .skills-card:hover .progress-bar {
+  box-shadow: 0 0 15px rgba(67, 233, 123, 0.4);
+}
